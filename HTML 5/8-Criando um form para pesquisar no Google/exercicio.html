@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de austonautas</title>
+    <style>
+        .input {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro da liga dos astronautas</h1>
+
+    <form action="https://www.example.com">
+        <label for="n">Name:</label>
+        <input type="text" id="n" class="input"><br>
+        <label for="e">Email:</label>
+        <input type="email" id="e" class="input">-
+        <label for="p">Password</label>
+        <input type="password" id="p" class="input"><br>
+        <label for="d">Data de nascimento</label>
+        <input type="date" id="d" class="input">-
+        <label for="f">Foto</label>
+        <input type="file" id="f" class="input"><br>
+        <label for="nc">Nacionalidade</label>
+            <select id="nc" name="naci" class="input">
+                <option value="Russo">Russo</option>
+                <option value="Italiano">Italiano</option>
+                <option value="Brasileiro">Brasileiro</option>
+            </select>-
+        <label>Genero: </label>
+        <label for="masc">M</label>
+        <input type="radio" id="masc" name="Genero">
+        <label for="femi">F</label>
+        <input type="radio" id="femi" name="Genero"><br>
+        <p>Suas Principais qualidades:</p>
+
+        <input type="checkbox" name="inteligencia" id="int">
+        <label for="int">Inteligencia</label> /
+        <input type="checkbox" name="Resiliencia" id="resi">
+        <label for="resi">Resiliencia</label> /
+        <input type="checkbox" name="pfisico" id="fisic">
+        <label for="fisic">Preparo Fisico</label> /
+        <input type="checkbox" name="Educacao" id="ed">
+        <label for="ed">Educação</label><br>
+
+        <textarea name="comentarios" placeholder="Porque voce quer se tornar um astrounauta?" class="input" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" class="input" value="Criar">
+
+    </form>
+</body>
+
+</html>

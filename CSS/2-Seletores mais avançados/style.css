@@ -1,0 +1,13 @@
+
+
+h1 + h4{
+    border: 4px solid black;
+}
+
+a[href="index.html"]{
+    color:orange ;
+}
+
+li:nth-of-type(2){
+    color: purple;
+}
