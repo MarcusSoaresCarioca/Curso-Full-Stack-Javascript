@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    min-height: 40px;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 8px 15px;
+}
+
+.logoNavBar{
+    width: 180px;
+}
+
+.headerBtnGroup{
+    display: flex;
+    gap: 15px;
+}
+
+.navBtn{
+    font-size: 16px;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.navBtn:hover{
+    border-bottom: 2px solid black;
+}
+
+.sectionTitle{
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sectionDescription{
+    text-align: center;
+    color: #383838;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "mainContent siderbarContent";
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: mainContent;
+}
+
+.categoryCard{
+    width: 280px;
+    height: 380px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.categoryCard:hover{
+    border-color: black;
+}
+
+.mainCardImg{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.mainCategoryCardTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px;
+}
+
+.mainCategoryCardDescription{
+    padding: 6px;
+}
+
+.siderbarContent{
+    background-color: #383838;
+    color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    grid-area: siderbarContent;
+    gap: 20px;
+}
+
+.sideBarCard{
+    width: 75%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sideBarCard:hover{
+    border-color: gainsboro;
+}
+
+.siderBarCardImg{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.siderBarCardTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 40px;
+    background-color: #292929;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 15px;
+}
+
+.logoFooter{
+    width: 180px;
+}
+
+.footerAnchor{
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:630px){
+    .gridcontainer{
+        grid-template-areas: 
+        "mainContent"
+        "siderbarContent";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .siderbarContent{
+        min-width: auto;
+    }
+
+    .footerAnchor{
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 463px){
+    .header{
+        justify-content: center;
+    }
+
+    .footer{
+        justify-content: center;
+    }
+}
