@@ -1,0 +1,15 @@
+.fundo{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container-sm{
+    color: #131212f1;
+    
+}
+
+.lb{
+    color: #fff;
+}
